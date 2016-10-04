@@ -9,29 +9,35 @@
       <circle cx="200" cy="200" r="100" fill="#FE4400	"/>
       <ellipse cx="500" cy="400" rx="800" ry="150" fill="	#0073CF"/>
       <polyline points="220 330 240 310 260 330"stroke="blue" stroke-width="5" stroke-style="round" fill="transparent">
-        <animateTransform attributeName="transform" attributeType="XML" type="translate"from="0"to="100"dur="10s"repeatCount="3"/>
+        <animateTransform attributeName="transform" attributeType="XML" type="translate"from="100"to="0"dur="10s"repeatCount="indefinite"/>
       </polyline>
       <polyline points="480 430 500 410 520 430"stroke="blue" stroke-width="5" stroke-style="round" fill="transparent">
-        <animateTransform attributeName="transform" attributeType="XML" type="translate"from="0"to="100"dur="10s"repeatCount="3"/>
+        <animateTransform attributeName="transform" attributeType="XML" type="translate"from="100"to="0"dur="10s"repeatCount="indefinite"/>
       </polyline>
       <polyline points="780 330 800 310 820 330"stroke="blue" stroke-width="5" stroke-style="round" fill="transparent">
-        <animateTransform attributeName="transform" attributeType="XML" type="translate"from="0"to="100"dur="10s"repeatCount="3"/>
+        <animateTransform attributeName="transform" attributeType="XML" type="translate"from="100"to="0"dur="10s"repeatCount="indefinite"/>
       </polyline>
       <polyline points="20 430 40 410 60 430"stroke="blue" stroke-width="5" stroke-style="round" fill="transparent">
-        <animateTransform attributeName="transform" attributeType="XML" type="translate"from="0"to="100"dur="10s"repeatCount="3"/>
+        <animateTransform attributeName="transform" attributeType="XML" type="translate"from="100"to="0"dur="10s"repeatCount="indefinite"/>
       </polyline>
       <polygon points="10 400 50 450 200 450 240 400" fill="#8b4513">
-        <animateTransform attributeName="transform" attributeType="XML"type="translate"from="0"to="500"dur="10s"repeatCount="3"/>
+        <animateTransform attributeName="transform" attributeType="XML"type="translate"from="0"to="200"dur="10s"repeatCount="1"/>
       </polygon>
       <polyline points="125 395 125 300"stroke="white" stroke-width="7">
-        <animateTransform attributeName="transform" attributeType="XML" type="translate"from="0"to="500"dur="10s"repeatCount="3"/>
+        <animateTransform attributeName="transform" attributeType="XML" type="translate"from="0"to="200"dur="10s"repeatCount="1"/>
       </polyline>
-      <polygon points="135 310 135 375 170 340" fill="#FFFF66">
-        <animateTransform attributeName="transform" attributeType="XML"type="translate"from="0"to="500"dur="10s"repeatCount="3"/>
+      <polygon points="135 300 135 388 185 330" fill="#FFFF66">
+        <animateTransform attributeName="transform" attributeType="XML"type="translate"from="0"to="200"dur="10s"repeatCount="1" id="testy"/>
       </polygon>
       <polygon points="115 300 115 388 60 330" fill="#FFFF66">
-        <animateTransform attributeName="transform" attributeType="XML"type="translate"from="0"to="500"dur="10s"repeatCount="3"/>
+        <animateTransform attributeName="transform" attributeType="XML"type="translate"from="0"to="200"dur="10s"repeatCount="1"/>
       </polygon>
+      <!-- Part 2 -->
+  <ellipse cx="1370" cy="350" rx="400" ry="150" fill="#9CCB19">
+    <animate attributeName="opacity" from="0" to="1" dur="0.1s" begin="testy.end"/>
+  <animate attributeName="cx" from="1370" to="999" dur="10s" begin="testy.end"/>
+
+  </ellipse>
     </svg>
   </body>
 </html>
