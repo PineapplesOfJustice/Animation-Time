@@ -21,22 +21,25 @@
         <animateTransform attributeName="transform" attributeType="XML" type="translate"from="100"to="0"dur="10s"repeatCount="indefinite"/>
       </polyline>
       <polygon points="10 400 50 450 200 450 240 400" fill="#8b4513">
-        <animateTransform attributeName="transform" attributeType="XML"type="translate"from="0"to="200"dur="10s"repeatCount="1"/>
+        <animateTransform attributeName="transform" attributeType="XML"type="translate"from="0"to="200"dur="10s"repeatCount="1"fill="freeze"/>
       </polygon>
       <polyline points="125 395 125 300"stroke="white" stroke-width="7">
-        <animateTransform attributeName="transform" attributeType="XML" type="translate"from="0"to="200"dur="10s"repeatCount="1"/>
+        <animateTransform attributeName="transform" attributeType="XML" type="translate"from="0"to="200"dur="10s"repeatCount="1"fill="freeze"/>
       </polyline>
       <polygon points="135 300 135 388 185 330" fill="#FFFF66">
-        <animateTransform attributeName="transform" attributeType="XML"type="translate"from="0"to="200"dur="10s"repeatCount="1" id="testy"/>
+        <animateTransform attributeName="transform" attributeType="XML"type="translate"from="0"to="200"dur="10s"repeatCount="1" id="testy"fill="freeze"/>
       </polygon>
       <polygon points="115 300 115 388 60 330" fill="#FFFF66">
-        <animateTransform attributeName="transform" attributeType="XML"type="translate"from="0"to="200"dur="10s"repeatCount="1"/>
+        <animateTransform attributeName="transform" attributeType="XML"type="translate"from="0"to="200"dur="10s"repeatCount="1"fill="freeze"/>
       </polygon>
       <!-- Part 2 -->
-  <ellipse cx="1370" cy="350" rx="400" ry="150" fill="#9CCB19">
-    <animate attributeName="opacity" from="0" to="1" dur="0.1s" begin="testy.end"/>
-  <animate attributeName="cx" from="1370" to="999" dur="10s" begin="testy.end"/>
-
+  <ellipse cx="1370" cy="410" rx="400" ry="120" fill="#9CCB19" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.1s" begin="testy.end" fill="freeze"/>
+  <animate attributeName="cx" from="1370" to="999" dur="10s" begin="testy.end"fill="freeze"/>
+  </ellipse>
+  <ellipse cx="1520" cy="300" rx="300" ry="90" fill="#9CCB19" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.1s" begin="testy.end" fill="freeze"/>
+  <animate attributeName="cx" from="1520" to="999" dur="10s" begin="testy.end"fill="freeze"/>
   </ellipse>
     </svg>
   </body>
