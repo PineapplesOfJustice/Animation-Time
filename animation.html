@@ -6,7 +6,25 @@
   </head>
   <body>
     <center><svg width="80%" viewbox="0 0 1000 500">
-      <circle cx="200" cy="200" r="100" fill="#FE4400	"/>
+
+      <polygon points="0 0 1000 0 1000 500 0 500" fill="black">
+        <animate attributeName="opacity"type="translate"from="1"to=".8"dur="10s"repeatCount="1"fill="freeze" begin="click" id="ten"/>
+      </polygon>
+
+      <circle cx="800" cy="600" r="100" fill="#FFC125	">
+        <animatetransform attributeType="XML" attributeName="transform" type="translate" from="0" to="400" dur="10s" begin="ten.begin" fill="freeze"/>
+      </circle>
+      <circle cx="200" cy="200" r="100" fill="#FFC125	">
+        <animate attributeType="XML" attributeName="cy" from="200" to="400" dur="5s" begin="click" id="zero" fill="freeze"/>
+      </circle>
+
+      <ellipse cx="200" cy="200" rx="500" ry="400" fill="#FE4400">
+        <animate attributeName="cy"from="200"to="400"dur="10s"repeatCount="1"begin="zero.begin" fill="freeze"/>
+        <animate attributeName="opacity"from="1"to="0"dur="10s"repeatCount="1"fill="freeze" begin="zero.begin"/>
+      </ellipse>
+      <circle cx="200" cy="200" r="100" fill="#FFC125	">
+        <animate attributeType="XML" attributeName="cy" from="200" to="400" dur="5s" begin="click" id="zero" fill="freeze"/>
+      </circle>
       <ellipse cx="500" cy="400" rx="800" ry="150" fill="	#0073CF"/>
       <polyline points="220 330 240 310 260 330"stroke="blue" stroke-width="5" stroke-style="round" fill="transparent">
         <animateTransform attributeName="transform" attributeType="XML" type="translate"from="100"to="0"dur="10s"repeatCount="indefinite"/>
@@ -46,13 +64,13 @@
   <animate attributeName="cx" from="1550" to="1180" dur="10s" begin="testy.end"fill="freeze" id="baggy"/>
   </ellipse>
   <!--Grass-->
-  <polyline points="940 430 960 410 980 430"stroke="green" stroke-width="5" stroke-style="round" fill="transparent" opacity="0">
+  <polyline points="1140 430 1160 410 1180 430"stroke="green" stroke-width="5" stroke-style="round" fill="transparent" opacity="0">
 <animate attributeName="opacity" from="0" to="1" dur="1s" begin="testy.end" fill="freeze"/>
-  <animateTransform attributeName="transform" attributeType="XML"type="translate"from="0"to="-180"dur="10s" begin="testy.end"fill="freeze"/>
+  <animateTransform attributeName="transform" attributeType="XML"type="translate"from="0"to="-370"dur="10s" begin="testy.end"fill="freeze"/>
 </polyline>
-<polyline points="1110 350 1130 330 1150 350"stroke="green" stroke-width="5" stroke-style="round" fill="transparent" opacity="0">
+<polyline points="1310 350 1330 330 1350 350"stroke="green" stroke-width="5" stroke-style="round" fill="transparent" opacity="0">
 <animate attributeName="opacity" from="0" to="1" dur="1s" begin="testy.end" fill="freeze"/>
-<animateTransform attributeName="transform" attributeType="XML"type="translate"from="0"to="-180"dur="10s" begin="testy.end"fill="freeze"/>
+<animateTransform attributeName="transform" attributeType="XML"type="translate"from="0"to="-370"dur="10s" begin="testy.end"fill="freeze"/>
 </polyline>
     </svg>
   </body>
