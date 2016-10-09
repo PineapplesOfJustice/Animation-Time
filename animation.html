@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="style.css">
     <style>
       @import 'https://fonts.googleapis.com/css?family=Satisfy';
+      @import 'https://fonts.googleapis.com/css?family=Special+Elite';
     </style>
   </head>
   <body>
@@ -36,12 +37,12 @@
         <animate attributeType="XML" attributeName="cy" from="200" to="400" dur="5s" begin="mouseover" id="zero" fill="freeze"/>
       </circle>
 
-      <!--background-->
+      <!--Title-->
       <text x="150" y="150" font-family=Satisfy font-size="60" fill="#FFC125" opacity="0">Sailor at Sea
-        <animate attributeType="XML" attributeName="opacity" from="0" to="1" dur="8s" begin="ten.begin" fill="freeze" repeatCount="1"/>
+        <animate attributeType="XML" attributeName="opacity" from="0" to="1" dur="10s" begin="ten.begin" fill="freeze" repeatCount="1"/>
       </text>
       <polyline points="140 190 460 160 300 200" stroke="#FFC125" stroke-width="5" stroke-linecap="round" stroke-linejoint="round" stroke-opacity="0" fill-opacity="0">
-        <animate attributename="stroke-opacity" from="0" to="1" dur="8s" begin="ten.begin" fill="freeze"/>
+        <animate attributename="stroke-opacity" from="0" to="1" dur="10s" begin="ten.begin" fill="freeze"/>
       </polyline>
 
       <!--Sea-->
@@ -61,6 +62,17 @@
         <animateTransform attributeName="transform" attributeType="XML" type="translate"from="100"to="0"dur="10s"repeatCount="indefinite"/>
       </polyline>
 
+      <!--Paragraph-->
+      <text x="12" y="310" font-family="Special Elite" font-size="10" fill="#8b4513" opacity="0" font-weight="bold">
+        <animate attributename="opacity" from="0" to="1" dur="5s" begin="cool.end" fill="freeze"/>
+        <animate attributename="font-size" from="5" to="16" dur="5s" begin="cool.end" fill="freeze"/>
+        <tspan>For sailors at sea, they face a constant battle.</tspan>
+        <tspan x="12" dy="40">The wind obey no master, yet tame it they must.</tspan>
+        <tspan x="12" dy="40">Or else, be swept away, land a distant sight.</tspan>
+        <tspan x="12" dy="40">The north star, their compass, sun turn to moon.</tspan>
+        <tspan x="12" dy="40">With wit and passion, home is just a minute away.</tspan>
+      </text>
+
       <!--the boat-->
       <polygon points="10 400 50 450 200 450 240 400" fill="#8b4513">
         <animateTransform attributeName="transform" attributeType="XML"type="translate"from="200"to="400"dur="10s"repeatCount="1"fill="freeze" begin="baggy.end"/>
@@ -76,7 +88,7 @@
       </polygon>
       <polygon points="115 300 115 388 60 330" fill="#FFFF66">
         <animateTransform attributeName="transform" attributeType="XML"type="translate"from="0"to="200"dur="10s"repeatCount="1"fill="freeze"/>
-        <animateTransform attributeName="transform" attributeType="XML"type="translate"from="200"to="400"dur="10s"repeatCount="1"fill="freeze" begin="baggy.end"/>
+        <animateTransform attributeName="transform" attributeType="XML"type="translate"from="200"to="400"dur="10s"repeatCount="1"fill="freeze" begin="baggy.end" id="cool"/>
       </polygon>
 
       <!--Land-->
